@@ -1,20 +1,17 @@
 var React = require('react');
 var Navigation = require('Navigation');
-var Timer = require('Timer');
+
 var Main = (props) => {
-  return (
-  <div>
-    <div>
-      <div>
-        <Navigation/>
-        <p>Main.jsx Rendered</p>
-          <div className="column small-centered medium-6 large-4">
-            {props.children}
-          </div>
-      </div>
-    </div>
-  </div>
-  );
+    return (
+        <div>
+            <Navigation/>
+            <div className="grid-x grid-margin-x">
+                <div className="small-4 cell"></div>
+                <div className="auto cell">{props.children}</div>
+                <div className="auto cell"></div>
+            </div>
+        </div>
+    );
 };
 
 module.exports = Main;
