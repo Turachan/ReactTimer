@@ -5,7 +5,7 @@ var Main = (props) => {
     return (
         <div>
             <Navigation/>
-            <div className="grid-x grid-margin-x">
+            <div className="grid-x">
                 <div className="small-4 cell"></div>
                 <div className="auto cell">{props.children}</div>
                 <div className="auto cell"></div>
